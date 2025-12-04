@@ -11,8 +11,8 @@ const sourGummy = Sour_Gummy({
 });
 
 export const metadata: Metadata = {
-  title: "Flovi",
-  description: "Flovi mini uygulamalar",
+  title: "🎀Flovi – Mini testler ve oyunlarla eğlenceli anlar✨",
+  description: "Flovi, arkadaşlık testleri ve küçük oyunlarla seni ve arkadaşlarını eğlendiren mini bir dünya. Şimdilik arkadaşlık testi var; yakında yeni mini uygulamalar da eklenecek.",
 };
 
 export default function RootLayout({
