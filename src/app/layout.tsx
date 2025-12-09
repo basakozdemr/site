@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Sour_Gummy } from "next/font/google";
 import { MainHeader } from "../../components/layout/MainHeader";
+import Script from "next/script";
 
 const sourGummy = Sour_Gummy({
   subsets: ["latin"],
@@ -22,8 +23,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="tr" className={sourGummy.variable}>
+      <head>
+        {/* Google Analytics - flovi ana site */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-K31MZ766KK"
+        />
+        <Script id="ga-flovi" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-K31MZ766KK', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
+      </head>
       <body>
-        <MainHeader />
         {children}
       </body>
     </html>
