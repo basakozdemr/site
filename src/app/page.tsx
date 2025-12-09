@@ -4,7 +4,7 @@ import Link from "next/link";
 const mainMenuItem = {
   title: "Arkadaşlık Testi",
   description: "Arkadaşların seni ne kadar tanıyor, gör.",
-  href: "https://test.flovi.com.tr", // ← burada diğer projenin URL'i olacak
+  href: "https://arkadaslik-testi.flovi.com.tr", // ← burada diğer projenin URL'i olacak
 };
 
 export default function HomePage() {
@@ -17,7 +17,7 @@ export default function HomePage() {
           <h1 className="mt-2 text-3xl font-bold sm:text-4xl">
             Ne yapmak istersin?
           </h1>
-          <p className="mt-3 text-sm text-[#A35C7D]">
+          <p className="mt-3 text-base text-[#A35C7D]">
             Şimdilik Flovi&apos;de bir oyun var: arkadaşlık testi.
             Yakında farklı mini uygulamalar da eklenecek.
           </p>
@@ -40,11 +40,11 @@ export default function HomePage() {
                 {mainMenuItem.title}
               </h2>
 
-              <p className="text-sm text-[#A35C7D]">
+              <p className="text-base text-[#A35C7D]">
                 {mainMenuItem.description}
               </p>
 
-              <div className="mt-3 inline-flex items-center gap-1 self-start rounded-full bg-[#F9487B] px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-[#E63E70]">
+              <div className="mt-3 inline-flex items-center gap-1 self-start rounded-full bg-[#F9487B] px-4 py-2 text-base font-semibold text-white shadow-sm transition hover:bg-[#E63E70]">
                 Hemen başla
                 <span>→</span>
               </div>
