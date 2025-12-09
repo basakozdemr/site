@@ -32,7 +32,7 @@ export default function HomePage() {
             className="block rounded-3xl border border-[#FFE4EC] bg-[#FFF5F8] p-6 shadow-sm transition hover:-translate-y-[2px] hover:shadow-md"
           >
             <div className="flex flex-col gap-3">
-              <div className="inline-flex items-center gap-2 self-start rounded-full bg-[#FFE4EC] px-3 py-1 text-[11px] font-semibold text-[#BF2755]">
+              <div className="inline-flex items-center gap-2 self-start rounded-full bg-[#FFE4EC] px-3 py-1 text-sm font-semibold text-[#BF2755]">
                 💘 Arkadaşlık Testi
               </div>
 
