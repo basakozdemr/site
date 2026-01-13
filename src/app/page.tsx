@@ -1,15 +1,18 @@
 // src/app/page.tsx
 import Link from "next/link";
+import { MainHeader } from "../../components/layout/MainHeader";
 
 const mainMenuItem = {
   title: "Arkadaşlık Testi",
   description: "Arkadaşların seni ne kadar tanıyor, gör.",
-  href: "https://arkadaslik-testi.flovi.com.tr", // ← burada diğer projenin URL'i olacak
+  href: "https://arkadaslik-testi.flovi.com.tr",
 };
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white text-[#220818]">
+      <MainHeader />
+
       <main className="mx-auto flex max-w-6xl flex-col items-center px-4 py-12">
         {/* Başlık */}
         <section className="max-w-xl text-center mb-10">
@@ -58,7 +61,6 @@ export default function HomePage() {
                 <h2 className="text-2xl font-bold text-[#220818]">
                   Yeni Uygulama
                 </h2>
-
               </div>
 
               <p className="text-base text-[#A35C7D]">
