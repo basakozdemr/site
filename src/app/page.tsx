@@ -13,18 +13,14 @@ export default function HomePage() {
       <main className="mx-auto flex max-w-6xl flex-col items-center px-4 py-12">
         {/* Başlık */}
         <section className="max-w-xl text-center mb-10">
-
           <h1 className="mt-2 text-3xl font-bold sm:text-4xl">
             Ne yapmak istersin?
           </h1>
-          <p className="mt-3 text-base text-[#A35C7D]">
-            Şimdilik Flovi&apos;de bir oyun var: arkadaşlık testi.
-            Yakında farklı mini uygulamalar da eklenecek.
-          </p>
         </section>
 
-        {/* Kart */}
-        <section className="w-full max-w-md">
+        {/* Kartlar */}
+        <section className="w-full max-w-md space-y-6">
+          {/* Mevcut kart */}
           <Link
             href={mainMenuItem.href}
             target="_blank"
@@ -50,6 +46,31 @@ export default function HomePage() {
               </div>
             </div>
           </Link>
+
+          {/* Yeni kart (çok yakında) */}
+          <div className="block rounded-3xl border border-purple-300 bg-purple-50 p-6 shadow-sm opacity-90">
+            <div className="flex flex-col gap-3">
+              <div className="inline-flex items-center gap-2 self-start rounded-full bg-purple-100 px-3 py-1 text-sm font-semibold text-purple-700">
+                🟣 Yeni Uygulama
+              </div>
+
+              <div className="flex items-center gap-2">
+                <h2 className="text-2xl font-bold text-[#220818]">
+                  Yeni Uygulama
+                </h2>
+
+              </div>
+
+              <p className="text-base text-[#A35C7D]">
+                Bu mini uygulama çok yakında...
+              </p>
+
+              <div className="mt-3 inline-flex cursor-not-allowed items-center gap-1 self-start rounded-full bg-purple-500 px-4 py-2 text-base font-semibold text-white shadow-sm opacity-70">
+                Yakında
+                <span>→</span>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>
